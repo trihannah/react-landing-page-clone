@@ -1,0 +1,130 @@
+button,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      gap: 8px;
+
+      a {
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: black;
+
+        &:hover {
+          background-color: underline;
+        }
+      }
+    }
+  }
+
+  .logoImage {
+    max-width: 100px;
+  }
+
+  .buttonBox {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 12px;
+    }
+  }
+}
+
+.heroSection {
+  background-color: ghostwhite;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    max-width: 1152px;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .greyBox {
+    border: 2px solid #a4a3a3;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .smallerHeadline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+
+  .buttonBlue {
+    background-color: #2196f3;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #1976d2;
+    }
+  }
+
+  .smallerText {
+    font-size: 0.875rem;
+    margin-top: 16px;
+
+    a {
+      color: #2196f3;
+    }
+  }
+}
