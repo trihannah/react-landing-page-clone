@@ -10,7 +10,7 @@ export default function App() {
             <img
               src="\images\useform-white.png"
               alt="Your Logo"
-              className={styles.logoImageWhite} // Add a class for styling (if needed)
+              className={styles.logoImageWhite}
             />
           </a>
           <ul>
@@ -49,10 +49,12 @@ export default function App() {
               <div className={styles.greyBox}>
                 <p>Create forms for any website, without the pain</p>
               </div>
-              <h1>The easiest way to create an online form</h1>
+              <h1>
+                The easiest way to <br /> create an online form
+              </h1>
               <p className={styles.smallerHeadline}>
-                Build forms in minutes instead of hours. The last form-builder
-                you'll ever need.
+                Build forms in minutes instead of hours. <br /> The last
+                form-builder you'll ever need.
               </p>
               <a
                 href="#"
@@ -68,7 +70,28 @@ export default function App() {
         </section>
         <section>Section1</section>
       </main>
-      <footer>Footer</footer>
+      <footer>
+        <footer>
+          <div className={styles.container}>
+            <h2>
+              Ditch your bloated form builder and <br /> focus on what matters
+              the most.
+            </h2>
+            <p>
+              Create a form, embed it into your website <br /> and share it with
+              your clients, in minutes.
+            </p>
+            <div className={styles.linkBox}>
+              <a
+                href="#"
+                className={`${styles.baseButton} ${styles.buttonBlue}`}
+              >
+                Get started for free
+              </a>
+            </div>
+          </div>
+        </footer>
+      </footer>
     </>
   );
 }
