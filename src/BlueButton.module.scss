@@ -1,0 +1,15 @@
+.blueButton {
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  text-decoration: none; /* Remove the default underline */
+
+  &:hover {
+    background-color: #1976d2;
+    text-decoration: underline; /* Add underline on hover */
+  }
+}

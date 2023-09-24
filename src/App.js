@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './App.module.scss';
+import blueButton from './BlueButton.js';
+import blueButtonStyles from './BlueButton.module.scss';
 
 export default function App() {
   return (
@@ -8,9 +10,9 @@ export default function App() {
         <nav>
           <a href="/">
             <img
-              src="\images\useform-white.png"
+              src="\images\useform.png"
               alt="Your Logo"
-              className={styles.logoImageWhite}
+              className={styles.logoImage}
             />
           </a>
           <ul>
@@ -23,22 +25,21 @@ export default function App() {
             <li>
               <a href="/#">Why Useform?</a>
             </li>
+            <li>
+              <a href="/#">Features</a>
+            </li>
+            <li>
+              <a href="/#">Blog</a>
+            </li>
+            <li>
+              <a href="/#">Sign In</a>
+            </li>
           </ul>
           <div className={styles.buttonBox}>
-            <a
-              href="/#"
-              className={`${styles.baseButton} ${styles.buttonBlack}`}
-            >
-              Login
+            <a href="/#" className={blueButtonStyles.blueButton}>
+              {' '}
+              Get started for free
             </a>
-            <div className={styles.buttonBox}>
-              <a
-                href="/#"
-                className={`${styles.baseButton} ${styles.buttonBlue}`}
-              >
-                Start for free
-              </a>
-            </div>
           </div>
         </nav>
       </header>
@@ -56,19 +57,27 @@ export default function App() {
                 Build forms in minutes instead of hours. <br /> The last
                 form-builder you'll ever need.
               </p>
-              <a
-                href="#"
-                className={`${styles.baseButton} ${styles.buttonBlue}`}
-              >
-                Create my first form for free
-              </a>
+              <div className={styles.buttonBox}>
+                <a href="/#" className={blueButtonStyles.blueButton}>
+                  {' '}
+                  Create my first form for free
+                </a>
+              </div>
+
               <p className={styles.smallerText}>
                 Trusted by agencies & freelancers <a href="#"> View pricing</a>
               </p>
             </div>
           </div>
         </section>
-        <section>Section1</section>
+        <section className={styles.section1}>
+          <div className={styles.imageContainer}>
+            <img
+              src="\images\dashboard-satisfaction-form.png"
+              alt="Dashboard Satisfaction Form"
+            />
+          </div>
+        </section>
       </main>
       <footer>
         <footer>
@@ -81,11 +90,9 @@ export default function App() {
               Create a form, embed it into your website <br /> and share it with
               your clients, in minutes.
             </p>
-            <div className={styles.linkBox}>
-              <a
-                href="#"
-                className={`${styles.baseButton} ${styles.buttonBlue}`}
-              >
+            <div className={styles.buttonBox}>
+              <a href="/#" className={blueButtonStyles.blueButton}>
+                {' '}
                 Get started for free
               </a>
             </div>
